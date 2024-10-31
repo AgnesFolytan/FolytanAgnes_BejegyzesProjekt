@@ -13,4 +13,18 @@ public class Batman implements Milliardos, Szuperhos {
         return "Batman: leleményesség: " + formattedLelemenyesseg;
     }
 
+    @Override
+    public boolean legyoziE(Szuperhos szuperhos) {
+        return szuperhos.mekkoraAzEreje() < lelemenyesseg;
+    }
+
+    @Override
+    public double mekkoraAzEreje() {
+        return lelemenyesseg * 2;
+    }
+
+    @Override
+    public void kutyutKeszit() {
+        lelemenyesseg += 50;
+    }
 }
