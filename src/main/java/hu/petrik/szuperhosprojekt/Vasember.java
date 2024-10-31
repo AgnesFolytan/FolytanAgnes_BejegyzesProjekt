@@ -9,7 +9,6 @@ public class Vasember extends Bosszuallo implements Milliardos{
     }
 
     @Override
-    public void kutyutKeszit() {
         Random rnd = new Random();
         setSzuperero(rnd.nextDouble(10)+getSzuperero());
     }
@@ -22,15 +21,5 @@ public class Vasember extends Bosszuallo implements Milliardos{
     @Override
     public String toString() {
         return "Vasember: " +super.toString();
-    }
-
-    @Override
-    public boolean legyoziE(Szuperhos szuperhos) {
-        return super.legyoziE(szuperhos);
-    }
-
-    @Override
-    public double mekkoraAzEreje() {
-        return getSzuperero();
     }
 }
